@@ -112,4 +112,5 @@ python -m pytest -q
 6. Adam 优化器更新模型参数。
 
 默认训练 5 轮。项目会自动使用 CUDA GPU（如果 PyTorch 检测到可用 CUDA），否则使用 CPU。
+Git practice: first update after initial push.
 
