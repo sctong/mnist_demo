@@ -2,6 +2,28 @@
 
 这是一个面向 PyTorch 初学者的完整图像分类项目。它使用小型卷积神经网络（CNN）识别 0～9 的手写数字，并将数据处理、模型定义、训练、评估和单图预测拆分到不同文件中。
 
+## 快速开始
+
+创建并激活 `.venv`，然后安装项目依赖：
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+```
+
+第一次训练时下载 MNIST 数据：
+
+```powershell
+python train.py --download
+```
+
+训练完成后评估模型：
+
+```powershell
+python evaluate.py
+```
+
 ## 1. 学习目标
 
 完成本项目后，你可以理解：
@@ -113,4 +135,3 @@ python -m pytest -q
 
 默认训练 5 轮。项目会自动使用 CUDA GPU（如果 PyTorch 检测到可用 CUDA），否则使用 CPU。
 Git practice: first update after initial push.
-
